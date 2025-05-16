@@ -19,10 +19,12 @@ export default function OrganizerForm({ organizer, onSuccess }) {
     e.preventDefault();
     if (isEdit) {
       await updateOrganizer(organizer._id, form);
+      onSuccess();
     } else {
-      await createOrganizer(form);
+      const res = await createOrganizer(form);
+      // Yeni organizatörün şirket adı ile bildirim için company bilgisini ilet
+      onSuccess({ company: form.company });
     }
-    onSuccess();
   };
 
   return (
