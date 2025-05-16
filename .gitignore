@@ -1,0 +1,45 @@
+# Node.js bağımlılıkları
+node_modules/
+
+# Ortam değişkenleri
+.env
+
+# Log dosyaları
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Çıktı dizinleri (build, dist vs.)
+dist/
+build/
+
+# VSCode klasörü
+.vscode/
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Coverage raporları
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# MongoDB ilgili dosyalar (veritabanı dump gibi)
+dump/
+*.bson
+*.json
+
+# pm2 process logs
+pids
+logs
+*.pid
+*.seed
+
+# .idea (Webstorm, Phpstorm vs)
+.idea/
+
+# MacOS trash
+.Trashes
