@@ -22,7 +22,11 @@ export default function LoginPage() {
 
   return (
     <div className="d-flex align-items-center justify-content-center vh-100 bg-light">
-      <form onSubmit={handleSubmit} className="p-4 rounded shadow bg-white" style={{ minWidth: 320 }}>
+      <form
+        onSubmit={handleSubmit}
+        className="p-4 rounded shadow bg-white"
+        style={{ minWidth: 320 }}
+      >
         <h2 className="mb-4 text-center">Admin Login</h2>
         <div className="mb-3">
           <input
@@ -44,7 +48,15 @@ export default function LoginPage() {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary w-100">Giriş Yap</button>
+        <button type="submit" className="btn btn-primary w-100">
+          Giriş Yap
+        </button>
+
+        <div className="text-end mt-2">
+          <a href="/forgot-password" className="small">
+            Şifremi Unuttum
+          </a>
+        </div>
       </form>
     </div>
   );
