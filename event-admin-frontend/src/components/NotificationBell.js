@@ -27,14 +27,23 @@ export default function NotificationBell({ notifications = [], onClear }) {
             <>
               <div className="d-flex justify-content-between align-items-center mb-2">
                 <span className="fw-bold">Bildirimler</span>
-                <button className="btn btn-sm btn-link text-danger p-0" onClick={onClear}>
+                <button
+                  className="btn btn-sm btn-link text-danger p-0"
+                  onClick={onClear}
+                >
                   Temizle
                 </button>
               </div>
-              <ul className="list-unstyled mb-0" style={{ maxHeight: 200, overflowY: "auto" }}>
+              <ul
+                className="list-unstyled mb-0"
+                style={{ maxHeight: 200, overflowY: "auto" }}
+              >
                 {notifications.map((n, i) => (
                   <li key={i} className="mb-1 small">
-                    <span role="img" aria-label="bell">🔔</span> {n}
+                    <span role="img" aria-label="bell">
+                      🔔
+                    </span>{" "}
+                    {n}
                   </li>
                 ))}
               </ul>

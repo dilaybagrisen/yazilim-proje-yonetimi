@@ -33,7 +33,10 @@ export default function Dashboard() {
       <header className="d-flex justify-content-between align-items-center mb-4 border-bottom pb-2">
         <h1 className="h3 fw-bold text-primary">Organizatörler</h1>
         <div className="d-flex align-items-center gap-3">
-          <NotificationBell notifications={notifications} onClear={() => setNotifications([])} />
+          <NotificationBell
+            notifications={notifications}
+            onClear={() => setNotifications([])}
+          />
           <button className="btn btn-outline-danger" onClick={logout}>
             <i className="bi bi-box-arrow-right me-1"></i>Çıkış
           </button>
@@ -56,10 +59,18 @@ export default function Dashboard() {
       </div>
       <OrganizerList
         organizers={filtered}
-        onAdd={async (newOrg) => {
+        onAdd={async (org) => {
           await load();
-          if (newOrg && newOrg.company) {
-            handleAddNotification(`Yeni organizatör [${newOrg.company}] başarıyla oluşturuldu.`);
+          if (org && org.company) {
+            if (org.edited) {
+              handleAddNotification(
+                `🔔 Organizasyon [${org.company}] başarıyla güncellendi.`
+              );
+            } else {
+              handleAddNotification(
+                `🔔 Yeni organizatör [${org.company}] başarıyla oluşturuldu.`
+              );
+            }
           }
         }}
         onDelete={async (id) => {

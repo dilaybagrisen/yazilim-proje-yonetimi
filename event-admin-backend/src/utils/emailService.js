@@ -19,9 +19,9 @@ module.exports = { sendWelcomeEmail };
 // src/utils/emailService.js
 
 // E-posta özelliğini şimdilik pas geçiyoruz:
-async function sendWelcomeEmail(to, tempPassword) {
+async function sendWelcomeEmail(to, content) {
   console.log(
-    `(stub) sendWelcomeEmail → to=${to}, tempPassword=${tempPassword}`
+    `(stub) sendWelcomeEmail → to=${to}, content=${content}`
   );
 }
 

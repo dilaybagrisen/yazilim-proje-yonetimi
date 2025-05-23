@@ -77,3 +77,45 @@ exports.deleteOrganizer = async (req, res) => {
       .json({ msg: "Sunucu hatası: silme işlemi tamamlanamadı." });
   }
 };
+
+exports.updateOrganizer = async (req, res) => {
+  const { id } = req.params;
+  const { email, company, address, phone, firstName, lastName } = req.body;
+
+  try {
+    // 1) Organizörü ve ilişkili User+Profile’ı çek
+    const org = await Organizer.findById(id).populate("user");
+    if (!org) return res.status(404).json({ msg: "Organizör bulunamadı" });
+
+    // 2) Organizer alanlarını güncelle
+    org.company = company ?? org.company;
+    org.address = address ?? org.address;
+    org.phone = phone ?? org.phone;
+    await org.save();
+
+    // 3) User email’i güncelle
+    const user = await User.findById(org.user._id).populate("profile");
+    if (email) user.email = email;
+    await user.save();
+
+    // 4) Profile isim-soyisim güncelle
+    const profile = await Profile.findById(user.profile);
+    if (firstName) profile.firstName = firstName;
+    if (lastName) profile.lastName = lastName;
+    await profile.save();
+
+    // 5) Yeni durumu dönecek şekilde tekrar çek
+    const updated = await Organizer.findById(id).populate({
+      path: "user",
+      select: "email role",
+      populate: { path: "profile", select: "firstName lastName" },
+    });
+
+    return res.json(updated);
+  } catch (err) {
+    console.error(err);
+    return res
+      .status(500)
+      .json({ msg: "Sunucu hatası: organizatör güncellenemedi." });
+  }
+};
