@@ -1,0 +1,66 @@
+\doxysection{src/index.js File Reference}
+\hypertarget{index_8js}{}\label{index_8js}\index{src/index.js@{src/index.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{index_8js_a81e570c198204c57e1ebcace4f4e6dad}{express}} = require("{}express"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{index_8js_a2481c912250fa1495a111ba4e7a66d07}{cors}} = require("{}cors"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{index_8js_a29c8aed8afa3aeaaef3378ab8bd78495}{connect\+DB}} = require("{}./config/db"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{index_8js_aeb85dfb8030809d459d88956cff6c5e2}{auth\+Routes}} = require("{}./routes/auth\+Routes"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{index_8js_a11b945ccc0874c89486f0629099aec8f}{organizer\+Routes}} = require("{}./routes/organizer\+Routes"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{index_8js_a61cd714f583f5ea8c02710a85ef32b9c}{app}} = \mbox{\hyperlink{index_8js_a81e570c198204c57e1ebcace4f4e6dad}{express}}()
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{index_8js_ab9a2d2c70deaf0f75cf0ee531f6ed0b5}{PORT}} = process.\+env.\+PORT \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} 5000
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{index_8js_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{index_8js_a61cd714f583f5ea8c02710a85ef32b9c}\index{index.js@{index.js}!app@{app}}
+\index{app@{app}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{index_8js_a61cd714f583f5ea8c02710a85ef32b9c} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} app = \mbox{\hyperlink{index_8js_a81e570c198204c57e1ebcace4f4e6dad}{express}}()}
+
+\Hypertarget{index_8js_aeb85dfb8030809d459d88956cff6c5e2}\index{index.js@{index.js}!authRoutes@{authRoutes}}
+\index{authRoutes@{authRoutes}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{authRoutes}{authRoutes}}
+{\footnotesize\ttfamily \label{index_8js_aeb85dfb8030809d459d88956cff6c5e2} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} auth\+Routes = require("{}./routes/auth\+Routes"{})}
+
+\Hypertarget{index_8js_a29c8aed8afa3aeaaef3378ab8bd78495}\index{index.js@{index.js}!connectDB@{connectDB}}
+\index{connectDB@{connectDB}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{connectDB}{connectDB}}
+{\footnotesize\ttfamily \label{index_8js_a29c8aed8afa3aeaaef3378ab8bd78495} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} connect\+DB = require("{}./config/db"{})}
+
+\Hypertarget{index_8js_a2481c912250fa1495a111ba4e7a66d07}\index{index.js@{index.js}!cors@{cors}}
+\index{cors@{cors}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{cors}{cors}}
+{\footnotesize\ttfamily \label{index_8js_a2481c912250fa1495a111ba4e7a66d07} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} cors = require("{}cors"{})}
+
+\Hypertarget{index_8js_a81e570c198204c57e1ebcace4f4e6dad}\index{index.js@{index.js}!express@{express}}
+\index{express@{express}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{express}{express}}
+{\footnotesize\ttfamily \label{index_8js_a81e570c198204c57e1ebcace4f4e6dad} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} express = require("{}express"{})}
+
+\Hypertarget{index_8js_a11b945ccc0874c89486f0629099aec8f}\index{index.js@{index.js}!organizerRoutes@{organizerRoutes}}
+\index{organizerRoutes@{organizerRoutes}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{organizerRoutes}{organizerRoutes}}
+{\footnotesize\ttfamily \label{index_8js_a11b945ccc0874c89486f0629099aec8f} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} organizer\+Routes = require("{}./routes/organizer\+Routes"{})}
+
+\Hypertarget{index_8js_ab9a2d2c70deaf0f75cf0ee531f6ed0b5}\index{index.js@{index.js}!PORT@{PORT}}
+\index{PORT@{PORT}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{PORT}{PORT}}
+{\footnotesize\ttfamily \label{index_8js_ab9a2d2c70deaf0f75cf0ee531f6ed0b5} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} PORT = process.\+env.\+PORT \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} 5000}
+

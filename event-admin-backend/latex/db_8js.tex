@@ -1,0 +1,50 @@
+\doxysection{src/config/db.js File Reference}
+\hypertarget{db_8js}{}\label{db_8js}\index{src/config/db.js@{src/config/db.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{db_8js_afb9c0464d485a1268d1a49e2e4c8590e}{mongoose}} = require("{}mongoose"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{db_8js_a29c8aed8afa3aeaaef3378ab8bd78495}{connect\+DB}}
+\item 
+module \mbox{\hyperlink{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{db_8js_a29c8aed8afa3aeaaef3378ab8bd78495}{connect\+DB}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{db_8js_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{db_8js_a29c8aed8afa3aeaaef3378ab8bd78495}\index{db.js@{db.js}!connectDB@{connectDB}}
+\index{connectDB@{connectDB}!db.js@{db.js}}
+\doxysubsubsection{\texorpdfstring{connectDB}{connectDB}}
+{\footnotesize\ttfamily \label{db_8js_a29c8aed8afa3aeaaef3378ab8bd78495} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} connect\+DB}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ async\ ()\ =>\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ await\ \mbox{\hyperlink{db_8js_afb9c0464d485a1268d1a49e2e4c8590e}{mongoose}}.connect(process.env.MONGO\_URI,\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ useNewUrlParser:\ true,}
+\DoxyCodeLine{\ \ \ \ \ \ useUnifiedTopology:\ true,}
+\DoxyCodeLine{\ \ \ \ \});}
+\DoxyCodeLine{\ \ \ \ console.log(\textcolor{stringliteral}{"{}MongoDB\ Bağlandı"{}});}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{catch}\ (err)\ \{}
+\DoxyCodeLine{\ \ \ \ console.error(err);}
+\DoxyCodeLine{\ \ \ \ process.exit(1);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{db.js@{db.js}!exports@{exports}}
+\index{exports@{exports}!db.js@{db.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+module exports = \mbox{\hyperlink{db_8js_a29c8aed8afa3aeaaef3378ab8bd78495}{connect\+DB}}}
+
+\Hypertarget{db_8js_afb9c0464d485a1268d1a49e2e4c8590e}\index{db.js@{db.js}!mongoose@{mongoose}}
+\index{mongoose@{mongoose}!db.js@{db.js}}
+\doxysubsubsection{\texorpdfstring{mongoose}{mongoose}}
+{\footnotesize\ttfamily \label{db_8js_afb9c0464d485a1268d1a49e2e4c8590e} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} mongoose = require("{}mongoose"{})}
+

@@ -1,0 +1,44 @@
+\doxysection{src/models/\+Profile.js File Reference}
+\hypertarget{_profile_8js}{}\label{_profile_8js}\index{src/models/Profile.js@{src/models/Profile.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_profile_8js_afb9c0464d485a1268d1a49e2e4c8590e}{mongoose}} = require("{}mongoose"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_profile_8js_ab595f176dad9b2b2e5ce08eca0759dab}{Profile\+Schema}}
+\item 
+module \mbox{\hyperlink{_profile_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = mongoose.\+model("{}Profile"{}, \mbox{\hyperlink{_profile_8js_ab595f176dad9b2b2e5ce08eca0759dab}{Profile\+Schema}})
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{_profile_8js_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_profile_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{Profile.js@{Profile.js}!exports@{exports}}
+\index{exports@{exports}!Profile.js@{Profile.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{_profile_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+module exports = mongoose.\+model("{}Profile"{}, \mbox{\hyperlink{_profile_8js_ab595f176dad9b2b2e5ce08eca0759dab}{Profile\+Schema}})}
+
+\Hypertarget{_profile_8js_afb9c0464d485a1268d1a49e2e4c8590e}\index{Profile.js@{Profile.js}!mongoose@{mongoose}}
+\index{mongoose@{mongoose}!Profile.js@{Profile.js}}
+\doxysubsubsection{\texorpdfstring{mongoose}{mongoose}}
+{\footnotesize\ttfamily \label{_profile_8js_afb9c0464d485a1268d1a49e2e4c8590e} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} mongoose = require("{}mongoose"{})}
+
+\Hypertarget{_profile_8js_ab595f176dad9b2b2e5ce08eca0759dab}\index{Profile.js@{Profile.js}!ProfileSchema@{ProfileSchema}}
+\index{ProfileSchema@{ProfileSchema}!Profile.js@{Profile.js}}
+\doxysubsubsection{\texorpdfstring{ProfileSchema}{ProfileSchema}}
+{\footnotesize\ttfamily \label{_profile_8js_ab595f176dad9b2b2e5ce08eca0759dab} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} Profile\+Schema}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ \mbox{\hyperlink{db_8js_afb9c0464d485a1268d1a49e2e4c8590e}{mongoose}}.Schema(\{}
+\DoxyCodeLine{\ \ firstName:\ String,}
+\DoxyCodeLine{\ \ lastName:\ String,}
+\DoxyCodeLine{\ \ phone:\ String,}
+\DoxyCodeLine{\ \ avatarUrl:\ String,}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}

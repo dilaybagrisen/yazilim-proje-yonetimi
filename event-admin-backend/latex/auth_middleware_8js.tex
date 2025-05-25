@@ -1,0 +1,45 @@
+\doxysection{src/middlewares/auth\+Middleware.js File Reference}
+\hypertarget{auth_middleware_8js}{}\label{auth_middleware_8js}\index{src/middlewares/authMiddleware.js@{src/middlewares/authMiddleware.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{auth_middleware_8js_a28364a69dd40b9f996ec82954579392e}{jwt}} = require("{}jsonwebtoken"{})
+\item 
+module \mbox{\hyperlink{auth_middleware_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{auth_middleware_8js_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{auth_middleware_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{authMiddleware.js@{authMiddleware.js}!exports@{exports}}
+\index{exports@{exports}!authMiddleware.js@{authMiddleware.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{auth_middleware_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+module exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\ \ (roles\ =\ [])\ =>}
+\DoxyCodeLine{\ \ (req,\ res,\ next)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ token\ =\ req.header(\textcolor{stringliteral}{"{}Authorization"{}})?.replace(\textcolor{stringliteral}{"{}Bearer\ "{}},\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!token)\ \textcolor{keywordflow}{return}\ res.status(401).json(\{\ msg:\ \textcolor{stringliteral}{"{}Yetkisiz"{}}\ \});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{const}\ decoded\ =\ \mbox{\hyperlink{auth_controller_8js_a28364a69dd40b9f996ec82954579392e}{jwt}}.verify(token,\ process.env.JWT\_SECRET);}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}\ (roles.length\ \&\&\ !roles.includes(decoded.role))}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ res.status(403).json(\{\ msg:\ \textcolor{stringliteral}{"{}Erişim\ yok"{}}\ \});}
+\DoxyCodeLine{\ \ \ \ \ \ req.user\ =\ decoded;}
+\DoxyCodeLine{\ \ \ \ \ \ next();}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{catch}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ res.status(401).json(\{\ msg:\ \textcolor{stringliteral}{"{}Token\ geçersiz"{}}\ \});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{auth_middleware_8js_a28364a69dd40b9f996ec82954579392e}\index{authMiddleware.js@{authMiddleware.js}!jwt@{jwt}}
+\index{jwt@{jwt}!authMiddleware.js@{authMiddleware.js}}
+\doxysubsubsection{\texorpdfstring{jwt}{jwt}}
+{\footnotesize\ttfamily \label{auth_middleware_8js_a28364a69dd40b9f996ec82954579392e} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} jwt = require("{}jsonwebtoken"{})}
+

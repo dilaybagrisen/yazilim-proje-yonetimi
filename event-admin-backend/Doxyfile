@@ -1,0 +1,41 @@
+# Proje bilgisi
+PROJECT_NAME           = EventAdmin
+PROJECT_NUMBER         = 1.0
+
+# Kaynak kod dizini
+INPUT                  = src
+RECURSIVE              = YES
+
+# İşlenecek dosya uzantıları (JS/TS projeleri için)
+FILE_PATTERNS          = *.js \
+                         *.jsx \
+                         *.ts \
+                         *.tsx
+
+# Uzantı–dil eşlemesi
+EXTENSION_MAPPING      = js=JavaScript \
+                         jsx=JavaScript \
+                         ts=TypeScript \
+                         tsx=TypeScript
+
+# Tüm öğeleri dahil et (dokümante edilmeyenler dahil)
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+
+# Çıktı ayarları
+GENERATE_HTML          = YES
+GENERATE_LATEX         = YES
+
+# Graphviz entegrasyonu
+HAVE_DOT               = YES
+DOT_PATH               = "C:/Program Files/Graphviz/bin"
+COLLABORATION_GRAPH    = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = png
+
+# PDF için LaTeX dizini
+LATEX_OUTPUT           = latex

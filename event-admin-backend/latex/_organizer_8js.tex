@@ -1,0 +1,47 @@
+\doxysection{src/models/\+Organizer.js File Reference}
+\hypertarget{_organizer_8js}{}\label{_organizer_8js}\index{src/models/Organizer.js@{src/models/Organizer.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_organizer_8js_afb9c0464d485a1268d1a49e2e4c8590e}{mongoose}} = require("{}mongoose"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_organizer_8js_aaa6a2807c5ba5082d8d440db5cdc0fde}{Organizer\+Schema}}
+\item 
+module \mbox{\hyperlink{_organizer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = mongoose.\+model("{}Organizer"{}, \mbox{\hyperlink{_organizer_8js_aaa6a2807c5ba5082d8d440db5cdc0fde}{Organizer\+Schema}})
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{_organizer_8js_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_organizer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{Organizer.js@{Organizer.js}!exports@{exports}}
+\index{exports@{exports}!Organizer.js@{Organizer.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{_organizer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+module exports = mongoose.\+model("{}Organizer"{}, \mbox{\hyperlink{_organizer_8js_aaa6a2807c5ba5082d8d440db5cdc0fde}{Organizer\+Schema}})}
+
+\Hypertarget{_organizer_8js_afb9c0464d485a1268d1a49e2e4c8590e}\index{Organizer.js@{Organizer.js}!mongoose@{mongoose}}
+\index{mongoose@{mongoose}!Organizer.js@{Organizer.js}}
+\doxysubsubsection{\texorpdfstring{mongoose}{mongoose}}
+{\footnotesize\ttfamily \label{_organizer_8js_afb9c0464d485a1268d1a49e2e4c8590e} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} mongoose = require("{}mongoose"{})}
+
+\Hypertarget{_organizer_8js_aaa6a2807c5ba5082d8d440db5cdc0fde}\index{Organizer.js@{Organizer.js}!OrganizerSchema@{OrganizerSchema}}
+\index{OrganizerSchema@{OrganizerSchema}!Organizer.js@{Organizer.js}}
+\doxysubsubsection{\texorpdfstring{OrganizerSchema}{OrganizerSchema}}
+{\footnotesize\ttfamily \label{_organizer_8js_aaa6a2807c5ba5082d8d440db5cdc0fde} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} Organizer\+Schema}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ \mbox{\hyperlink{db_8js_afb9c0464d485a1268d1a49e2e4c8590e}{mongoose}}.Schema(}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \ \ user:\ \{\ type:\ \mbox{\hyperlink{db_8js_afb9c0464d485a1268d1a49e2e4c8590e}{mongoose}}.Schema.Types.ObjectId,\ ref:\ \textcolor{stringliteral}{"{}User"{}},\ required:\ \textcolor{keyword}{true}\ \},}
+\DoxyCodeLine{\ \ \ \ company:\ \{\ type:\ String,\ required:\ \textcolor{keyword}{true}\ \},}
+\DoxyCodeLine{\ \ \ \ address:\ String,}
+\DoxyCodeLine{\ \ \ \ phone:\ String,}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ \{\ timestamps:\ \textcolor{keyword}{true}\ \}}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}

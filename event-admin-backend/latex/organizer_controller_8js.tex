@@ -1,0 +1,101 @@
+\doxysection{src/controllers/organizer\+Controller.js File Reference}
+\hypertarget{organizer_controller_8js}{}\label{organizer_controller_8js}\index{src/controllers/organizerController.js@{src/controllers/organizerController.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{organizer_controller_8js_a2c16c9815be43824ba078bea5743faff}{bcrypt}} = require("{}bcryptjs"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{organizer_controller_8js_a81b60c7464abd7ce22edb107c12240a2}{User}} = require("{}../models/User"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{organizer_controller_8js_adf67f2fd7849d4b82ba33fc03cd0bdb5}{Organizer}} = require("{}../models/Organizer"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{organizer_controller_8js_abb12bcc02ba16910df2c8230a7c4344a}{Profile}} = require("{}../models/Profile"{})
+\item 
+\mbox{\hyperlink{organizer_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \{ \mbox{\hyperlink{email_service_8js_ac6aa0dab3679c9bea78ff55d17080f24}{send\+Welcome\+Email}} \} = require("{}../utils/email\+Service"{})
+\item 
+\mbox{\hyperlink{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{organizer_controller_8js_a97b9eeb36defbb9b7e5a4ab2e8966bee}{create\+Organizer}}
+\item 
+\mbox{\hyperlink{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{organizer_controller_8js_adbfa6654ed6d1e5ac6056643367b617d}{get\+All\+Organizers}}
+\item 
+\mbox{\hyperlink{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{organizer_controller_8js_adb80bbf72dac0a1421740f2b28ccf069}{update\+Organizer}}
+\item 
+\mbox{\hyperlink{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{organizer_controller_8js_a553cf50edfe9add6f6d1ecb20fbb8b96}{delete\+Organizer}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{organizer_controller_8js_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{organizer_controller_8js_a2c16c9815be43824ba078bea5743faff}\index{organizerController.js@{organizerController.js}!bcrypt@{bcrypt}}
+\index{bcrypt@{bcrypt}!organizerController.js@{organizerController.js}}
+\doxysubsubsection{\texorpdfstring{bcrypt}{bcrypt}}
+{\footnotesize\ttfamily \label{organizer_controller_8js_a2c16c9815be43824ba078bea5743faff} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} bcrypt = require("{}bcryptjs"{})}
+
+\Hypertarget{organizer_controller_8js_a92b303b76a3f942ea819498907d5e83c}\index{organizerController.js@{organizerController.js}!const@{const}}
+\index{const@{const}!organizerController.js@{organizerController.js}}
+\doxysubsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily \label{organizer_controller_8js_a92b303b76a3f942ea819498907d5e83c} 
+const \{ \mbox{\hyperlink{email_service_8js_ac6aa0dab3679c9bea78ff55d17080f24}{send\+Welcome\+Email}} \} = require("{}../utils/email\+Service"{})}
+
+\Hypertarget{organizer_controller_8js_a97b9eeb36defbb9b7e5a4ab2e8966bee}\index{organizerController.js@{organizerController.js}!createOrganizer@{createOrganizer}}
+\index{createOrganizer@{createOrganizer}!organizerController.js@{organizerController.js}}
+\doxysubsubsection{\texorpdfstring{createOrganizer}{createOrganizer}}
+{\footnotesize\ttfamily \label{organizer_controller_8js_a97b9eeb36defbb9b7e5a4ab2e8966bee} 
+\mbox{\hyperlink{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} create\+Organizer}
+
+\Hypertarget{organizer_controller_8js_a553cf50edfe9add6f6d1ecb20fbb8b96}\index{organizerController.js@{organizerController.js}!deleteOrganizer@{deleteOrganizer}}
+\index{deleteOrganizer@{deleteOrganizer}!organizerController.js@{organizerController.js}}
+\doxysubsubsection{\texorpdfstring{deleteOrganizer}{deleteOrganizer}}
+{\footnotesize\ttfamily \label{organizer_controller_8js_a553cf50edfe9add6f6d1ecb20fbb8b96} 
+\mbox{\hyperlink{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} delete\+Organizer}
+
+\Hypertarget{organizer_controller_8js_adbfa6654ed6d1e5ac6056643367b617d}\index{organizerController.js@{organizerController.js}!getAllOrganizers@{getAllOrganizers}}
+\index{getAllOrganizers@{getAllOrganizers}!organizerController.js@{organizerController.js}}
+\doxysubsubsection{\texorpdfstring{getAllOrganizers}{getAllOrganizers}}
+{\footnotesize\ttfamily \label{organizer_controller_8js_adbfa6654ed6d1e5ac6056643367b617d} 
+\mbox{\hyperlink{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+All\+Organizers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ async\ (req,\ res)\ =>\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ organizers\ =\ await\ \mbox{\hyperlink{organizer_controller_8js_adf67f2fd7849d4b82ba33fc03cd0bdb5}{Organizer}}.find().populate(\{}
+\DoxyCodeLine{\ \ \ \ \ \ path:\ \textcolor{stringliteral}{"{}user"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ select:\ \textcolor{stringliteral}{"{}email\ role"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ populate:\ \{\ path:\ \textcolor{stringliteral}{"{}profile"{}},\ select:\ \textcolor{stringliteral}{"{}firstName\ lastName"{}}\ \},}
+\DoxyCodeLine{\ \ \ \ \});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ res.json(organizers);}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{catch}\ (err)\ \{}
+\DoxyCodeLine{\ \ \ \ console.error(err);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ res}
+\DoxyCodeLine{\ \ \ \ \ \ .status(500)}
+\DoxyCodeLine{\ \ \ \ \ \ .json(\{\ msg:\ \textcolor{stringliteral}{"{}Sunucu\ hatası:\ organizatörler\ alınamadı."{}}\ \});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{organizer_controller_8js_adf67f2fd7849d4b82ba33fc03cd0bdb5}\index{organizerController.js@{organizerController.js}!Organizer@{Organizer}}
+\index{Organizer@{Organizer}!organizerController.js@{organizerController.js}}
+\doxysubsubsection{\texorpdfstring{Organizer}{Organizer}}
+{\footnotesize\ttfamily \label{organizer_controller_8js_adf67f2fd7849d4b82ba33fc03cd0bdb5} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} Organizer = require("{}../models/Organizer"{})}
+
+\Hypertarget{organizer_controller_8js_abb12bcc02ba16910df2c8230a7c4344a}\index{organizerController.js@{organizerController.js}!Profile@{Profile}}
+\index{Profile@{Profile}!organizerController.js@{organizerController.js}}
+\doxysubsubsection{\texorpdfstring{Profile}{Profile}}
+{\footnotesize\ttfamily \label{organizer_controller_8js_abb12bcc02ba16910df2c8230a7c4344a} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} Profile = require("{}../models/Profile"{})}
+
+\Hypertarget{organizer_controller_8js_adb80bbf72dac0a1421740f2b28ccf069}\index{organizerController.js@{organizerController.js}!updateOrganizer@{updateOrganizer}}
+\index{updateOrganizer@{updateOrganizer}!organizerController.js@{organizerController.js}}
+\doxysubsubsection{\texorpdfstring{updateOrganizer}{updateOrganizer}}
+{\footnotesize\ttfamily \label{organizer_controller_8js_adb80bbf72dac0a1421740f2b28ccf069} 
+\mbox{\hyperlink{db_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} update\+Organizer}
+
+\Hypertarget{organizer_controller_8js_a81b60c7464abd7ce22edb107c12240a2}\index{organizerController.js@{organizerController.js}!User@{User}}
+\index{User@{User}!organizerController.js@{organizerController.js}}
+\doxysubsubsection{\texorpdfstring{User}{User}}
+{\footnotesize\ttfamily \label{organizer_controller_8js_a81b60c7464abd7ce22edb107c12240a2} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} User = require("{}../models/User"{})}
+

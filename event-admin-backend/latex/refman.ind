@@ -1,0 +1,218 @@
+\begin{theindex}
+
+  \item {apiKey}
+    \subitem {emailService.js}, \hyperpage{13}
+  \item {app}
+    \subitem {index.js}, \hyperpage{7}
+  \item {auth}
+    \subitem {organizerRoutes.js}, \hyperpage{12}
+  \item {authController.js}
+    \subitem {bcrypt}, \hyperpage{4}
+    \subitem {const}, \hyperpage{4}
+    \subitem {crypto}, \hyperpage{4}
+    \subitem {forgotPassword}, \hyperpage{4}
+    \subitem {jwt}, \hyperpage{4}
+    \subitem {login}, \hyperpage{4}
+    \subitem {resetPassword}, \hyperpage{5}
+    \subitem {resetTokens}, \hyperpage{5}
+    \subitem {User}, \hyperpage{5}
+  \item {authMiddleware.js}
+    \subitem {exports}, \hyperpage{8}
+    \subitem {jwt}, \hyperpage{8}
+  \item {authRoutes}
+    \subitem {index.js}, \hyperpage{7}
+  \item {authRoutes.js}
+    \subitem {const}, \hyperpage{11}
+    \subitem {exports}, \hyperpage{11}
+    \subitem {router}, \hyperpage{11}
+
+  \indexspace
+
+  \item {bcrypt}
+    \subitem {authController.js}, \hyperpage{4}
+    \subitem {organizerController.js}, \hyperpage{6}
+
+  \indexspace
+
+  \item {connectDB}
+    \subitem {db.js}, \hyperpage{3}
+    \subitem {index.js}, \hyperpage{7}
+  \item {const}
+    \subitem {authController.js}, \hyperpage{4}
+    \subitem {authRoutes.js}, \hyperpage{11}
+    \subitem {organizerController.js}, \hyperpage{6}
+    \subitem {organizerRoutes.js}, \hyperpage{12}
+  \item {cors}
+    \subitem {index.js}, \hyperpage{7}
+  \item {createOrganizer}
+    \subitem {organizerController.js}, \hyperpage{6}
+  \item {crypto}
+    \subitem {authController.js}, \hyperpage{4}
+
+  \indexspace
+
+  \item {db.js}
+    \subitem {connectDB}, \hyperpage{3}
+    \subitem {exports}, \hyperpage{3}
+    \subitem {mongoose}, \hyperpage{3}
+  \item {deleteOrganizer}
+    \subitem {organizerController.js}, \hyperpage{6}
+
+  \indexspace
+
+  \item {else}
+    \subitem {emailService.js}, \hyperpage{13}
+  \item {emailService.js}
+    \subitem {apiKey}, \hyperpage{13}
+    \subitem {else}, \hyperpage{13}
+    \subitem {exports}, \hyperpage{13}
+    \subitem {if}, \hyperpage{13}
+    \subitem {sendWelcomeEmail}, \hyperpage{13}
+    \subitem {sgMail}, \hyperpage{13}
+  \item {exports}
+    \subitem {authMiddleware.js}, \hyperpage{8}
+    \subitem {authRoutes.js}, \hyperpage{11}
+    \subitem {db.js}, \hyperpage{3}
+    \subitem {emailService.js}, \hyperpage{13}
+    \subitem {Level.js}, \hyperpage{8}
+    \subitem {Organizer.js}, \hyperpage{9}
+    \subitem {organizerRoutes.js}, \hyperpage{12}
+    \subitem {Profile.js}, \hyperpage{10}
+    \subitem {User.js}, \hyperpage{10}
+  \item {express}
+    \subitem {index.js}, \hyperpage{7}
+
+  \indexspace
+
+  \item {forgotPassword}
+    \subitem {authController.js}, \hyperpage{4}
+
+  \indexspace
+
+  \item {getAllOrganizers}
+    \subitem {organizerController.js}, \hyperpage{6}
+
+  \indexspace
+
+  \item {if}
+    \subitem {emailService.js}, \hyperpage{13}
+  \item {index.js}
+    \subitem {app}, \hyperpage{7}
+    \subitem {authRoutes}, \hyperpage{7}
+    \subitem {connectDB}, \hyperpage{7}
+    \subitem {cors}, \hyperpage{7}
+    \subitem {express}, \hyperpage{7}
+    \subitem {organizerRoutes}, \hyperpage{7}
+    \subitem {PORT}, \hyperpage{7}
+
+  \indexspace
+
+  \item {jwt}
+    \subitem {authController.js}, \hyperpage{4}
+    \subitem {authMiddleware.js}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Level.js}
+    \subitem {exports}, \hyperpage{8}
+    \subitem {LevelSchema}, \hyperpage{8}
+    \subitem {mongoose}, \hyperpage{9}
+  \item {LevelSchema}
+    \subitem {Level.js}, \hyperpage{8}
+  \item {login}
+    \subitem {authController.js}, \hyperpage{4}
+
+  \indexspace
+
+  \item {mongoose}
+    \subitem {db.js}, \hyperpage{3}
+    \subitem {Level.js}, \hyperpage{9}
+    \subitem {Organizer.js}, \hyperpage{9}
+    \subitem {Profile.js}, \hyperpage{10}
+    \subitem {User.js}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Organizer}
+    \subitem {organizerController.js}, \hyperpage{6}
+  \item {Organizer.js}
+    \subitem {exports}, \hyperpage{9}
+    \subitem {mongoose}, \hyperpage{9}
+    \subitem {OrganizerSchema}, \hyperpage{9}
+  \item {organizerController.js}
+    \subitem {bcrypt}, \hyperpage{6}
+    \subitem {const}, \hyperpage{6}
+    \subitem {createOrganizer}, \hyperpage{6}
+    \subitem {deleteOrganizer}, \hyperpage{6}
+    \subitem {getAllOrganizers}, \hyperpage{6}
+    \subitem {Organizer}, \hyperpage{6}
+    \subitem {Profile}, \hyperpage{6}
+    \subitem {updateOrganizer}, \hyperpage{6}
+    \subitem {User}, \hyperpage{6}
+  \item {organizerRoutes}
+    \subitem {index.js}, \hyperpage{7}
+  \item {organizerRoutes.js}
+    \subitem {auth}, \hyperpage{12}
+    \subitem {const}, \hyperpage{12}
+    \subitem {exports}, \hyperpage{12}
+    \subitem {router}, \hyperpage{12}
+  \item {OrganizerSchema}
+    \subitem {Organizer.js}, \hyperpage{9}
+
+  \indexspace
+
+  \item {PORT}
+    \subitem {index.js}, \hyperpage{7}
+  \item {Profile}
+    \subitem {organizerController.js}, \hyperpage{6}
+  \item {Profile.js}
+    \subitem {exports}, \hyperpage{10}
+    \subitem {mongoose}, \hyperpage{10}
+    \subitem {ProfileSchema}, \hyperpage{10}
+  \item {ProfileSchema}
+    \subitem {Profile.js}, \hyperpage{10}
+
+  \indexspace
+
+  \item {resetPassword}
+    \subitem {authController.js}, \hyperpage{5}
+  \item {resetTokens}
+    \subitem {authController.js}, \hyperpage{5}
+  \item {router}
+    \subitem {authRoutes.js}, \hyperpage{11}
+    \subitem {organizerRoutes.js}, \hyperpage{12}
+
+  \indexspace
+
+  \item {sendWelcomeEmail}
+    \subitem {emailService.js}, \hyperpage{13}
+  \item {sgMail}
+    \subitem {emailService.js}, \hyperpage{13}
+  \item {src/config/db.js}, \hyperpage{3}
+  \item {src/controllers/authController.js}, \hyperpage{4}
+  \item {src/controllers/organizerController.js}, \hyperpage{5}
+  \item {src/index.js}, \hyperpage{7}
+  \item {src/middlewares/authMiddleware.js}, \hyperpage{8}
+  \item {src/models/Level.js}, \hyperpage{8}
+  \item {src/models/Organizer.js}, \hyperpage{9}
+  \item {src/models/Profile.js}, \hyperpage{10}
+  \item {src/models/User.js}, \hyperpage{10}
+  \item {src/routes/authRoutes.js}, \hyperpage{11}
+  \item {src/routes/organizerRoutes.js}, \hyperpage{12}
+  \item {src/utils/emailService.js}, \hyperpage{12}
+
+  \indexspace
+
+  \item {updateOrganizer}
+    \subitem {organizerController.js}, \hyperpage{6}
+  \item {User}
+    \subitem {authController.js}, \hyperpage{5}
+    \subitem {organizerController.js}, \hyperpage{6}
+  \item {User.js}
+    \subitem {exports}, \hyperpage{10}
+    \subitem {mongoose}, \hyperpage{10}
+    \subitem {UserSchema}, \hyperpage{11}
+  \item {UserSchema}
+    \subitem {User.js}, \hyperpage{11}
+
+\end{theindex}

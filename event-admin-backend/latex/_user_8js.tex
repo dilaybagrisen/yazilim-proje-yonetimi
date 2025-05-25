@@ -1,0 +1,51 @@
+\doxysection{src/models/\+User.js File Reference}
+\hypertarget{_user_8js}{}\label{_user_8js}\index{src/models/User.js@{src/models/User.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_user_8js_afb9c0464d485a1268d1a49e2e4c8590e}{mongoose}} = require("{}mongoose"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_user_8js_a466e5741481598051f412935a2ff4e2c}{User\+Schema}}
+\item 
+module \mbox{\hyperlink{_user_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = mongoose.\+model("{}User"{}, \mbox{\hyperlink{_user_8js_a466e5741481598051f412935a2ff4e2c}{User\+Schema}})
+\end{DoxyCompactItemize}
+
+
+\label{doc-var-members}
+\Hypertarget{_user_8js_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_user_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{User.js@{User.js}!exports@{exports}}
+\index{exports@{exports}!User.js@{User.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{_user_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+module exports = mongoose.\+model("{}User"{}, \mbox{\hyperlink{_user_8js_a466e5741481598051f412935a2ff4e2c}{User\+Schema}})}
+
+\Hypertarget{_user_8js_afb9c0464d485a1268d1a49e2e4c8590e}\index{User.js@{User.js}!mongoose@{mongoose}}
+\index{mongoose@{mongoose}!User.js@{User.js}}
+\doxysubsubsection{\texorpdfstring{mongoose}{mongoose}}
+{\footnotesize\ttfamily \label{_user_8js_afb9c0464d485a1268d1a49e2e4c8590e} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} mongoose = require("{}mongoose"{})}
+
+\Hypertarget{_user_8js_a466e5741481598051f412935a2ff4e2c}\index{User.js@{User.js}!UserSchema@{UserSchema}}
+\index{UserSchema@{UserSchema}!User.js@{User.js}}
+\doxysubsubsection{\texorpdfstring{UserSchema}{UserSchema}}
+{\footnotesize\ttfamily \label{_user_8js_a466e5741481598051f412935a2ff4e2c} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} User\+Schema}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ \mbox{\hyperlink{db_8js_afb9c0464d485a1268d1a49e2e4c8590e}{mongoose}}.Schema(}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \ \ email:\ \{\ type:\ String,\ required:\ \textcolor{keyword}{true},\ unique:\ \textcolor{keyword}{true}\ \},}
+\DoxyCodeLine{\ \ \ \ password:\ \{\ type:\ String,\ required:\ \textcolor{keyword}{true}\ \},}
+\DoxyCodeLine{\ \ \ \ role:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ type:\ String,}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{enum}:\ [\textcolor{stringliteral}{"{}admin"{}},\ \textcolor{stringliteral}{"{}organizer"{}},\ \textcolor{stringliteral}{"{}customer"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{default}:\ \textcolor{stringliteral}{"{}organizer"{}},}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ profile:\ \{\ type:\ \mbox{\hyperlink{db_8js_afb9c0464d485a1268d1a49e2e4c8590e}{mongoose}}.Schema.Types.ObjectId,\ ref:\ \textcolor{stringliteral}{"{}Profile"{}}\ \},}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ \{\ timestamps:\ \textcolor{keyword}{true}\ \}}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}

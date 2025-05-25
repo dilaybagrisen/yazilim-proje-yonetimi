@@ -1,0 +1,72 @@
+\doxysection{src/utils/email\+Service.js File Reference}
+\hypertarget{email_service_8js}{}\label{email_service_8js}\index{src/utils/emailService.js@{src/utils/emailService.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{email_service_8js_a74cef927613b4d26a2c4a50ff7a9e7c0}{if}} (!\mbox{\hyperlink{email_service_8js_a15b4b7de9814e6df1356f5d3ae878d8f}{api\+Key}}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}!api\+Key.\+starts\+With("{}SG."{}))
+\item 
+function async \mbox{\hyperlink{email_service_8js_ac6aa0dab3679c9bea78ff55d17080f24}{send\+Welcome\+Email}} (to, temp\+Password)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{email_service_8js_a92bba0e7399c02817ad743672f5500fc}{sg\+Mail}} = require("{}@sendgrid/mail"{})
+\item 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{email_service_8js_a15b4b7de9814e6df1356f5d3ae878d8f}{api\+Key}} = process.\+env.\+SENDGRID\+\_\+\+API\+\_\+\+KEY
+\item 
+\mbox{\hyperlink{email_service_8js_a0544c3fe466e421738dae463968b70ba}{else}}
+\item 
+module \mbox{\hyperlink{email_service_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \{ \mbox{\hyperlink{email_service_8js_ac6aa0dab3679c9bea78ff55d17080f24}{send\+Welcome\+Email}} \}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{email_service_8js_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{email_service_8js_a74cef927613b4d26a2c4a50ff7a9e7c0}\index{emailService.js@{emailService.js}!if@{if}}
+\index{if@{if}!emailService.js@{emailService.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily \label{email_service_8js_a74cef927613b4d26a2c4a50ff7a9e7c0} 
+if (\begin{DoxyParamCaption}\item[{!\mbox{\hyperlink{email_service_8js_a15b4b7de9814e6df1356f5d3ae878d8f}{api\+Key}}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}!api\+Key.}]{starts\+With}{"{}\+SG."{}}\end{DoxyParamCaption})}
+
+\Hypertarget{email_service_8js_ac6aa0dab3679c9bea78ff55d17080f24}\index{emailService.js@{emailService.js}!sendWelcomeEmail@{sendWelcomeEmail}}
+\index{sendWelcomeEmail@{sendWelcomeEmail}!emailService.js@{emailService.js}}
+\doxysubsubsection{\texorpdfstring{sendWelcomeEmail()}{sendWelcomeEmail()}}
+{\footnotesize\ttfamily \label{email_service_8js_ac6aa0dab3679c9bea78ff55d17080f24} 
+function async send\+Welcome\+Email (\begin{DoxyParamCaption}\item[{}]{to}{, }\item[{}]{temp\+Password}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{email_service_8js_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{email_service_8js_a15b4b7de9814e6df1356f5d3ae878d8f}\index{emailService.js@{emailService.js}!apiKey@{apiKey}}
+\index{apiKey@{apiKey}!emailService.js@{emailService.js}}
+\doxysubsubsection{\texorpdfstring{apiKey}{apiKey}}
+{\footnotesize\ttfamily \label{email_service_8js_a15b4b7de9814e6df1356f5d3ae878d8f} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} api\+Key = process.\+env.\+SENDGRID\+\_\+\+API\+\_\+\+KEY}
+
+\Hypertarget{email_service_8js_a0544c3fe466e421738dae463968b70ba}\index{emailService.js@{emailService.js}!else@{else}}
+\index{else@{else}!emailService.js@{emailService.js}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \label{email_service_8js_a0544c3fe466e421738dae463968b70ba} 
+else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{email_service_8js_a92bba0e7399c02817ad743672f5500fc}{sgMail}}.setApiKey(\mbox{\hyperlink{email_service_8js_a15b4b7de9814e6df1356f5d3ae878d8f}{apiKey}})}
+
+\end{DoxyCode}
+\Hypertarget{email_service_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{emailService.js@{emailService.js}!exports@{exports}}
+\index{exports@{exports}!emailService.js@{emailService.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{email_service_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+module exports = \{ \mbox{\hyperlink{email_service_8js_ac6aa0dab3679c9bea78ff55d17080f24}{send\+Welcome\+Email}} \}}
+
+\Hypertarget{email_service_8js_a92bba0e7399c02817ad743672f5500fc}\index{emailService.js@{emailService.js}!sgMail@{sgMail}}
+\index{sgMail@{sgMail}!emailService.js@{emailService.js}}
+\doxysubsubsection{\texorpdfstring{sgMail}{sgMail}}
+{\footnotesize\ttfamily \label{email_service_8js_a92bba0e7399c02817ad743672f5500fc} 
+\mbox{\hyperlink{auth_controller_8js_a92b303b76a3f942ea819498907d5e83c}{const}} sg\+Mail = require("{}@sendgrid/mail"{})}
+
